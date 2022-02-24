@@ -1,0 +1,30 @@
+@import "./normalize.css";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --color-body: #56534c;
+  --color-heading-hero: #ffffff;
+}
+
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 1.2rem;
+  color: var(--color-body);
+}
+
+h1 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 1.45rem;
+  color: var(--color-heading-hero);
+}
