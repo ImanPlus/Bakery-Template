@@ -113,6 +113,21 @@ body {
     background: url(../images/hero-block/background_hero_w1240.jpg);
     background-size: cover;
   }
+
+  .hero h1 {
+    font-size: 7rem;
+  }
+
+  .hero .tag__line {
+    font-size: 1.8rem;
+    margin-top: 9.5rem;
+    margin-bottom: 5.3rem;
+  }
+
+  .hero .hero__content {
+    margin-bottom: 18rem;
+    margin-top: 10rem;
+  }
 }
 
 /* Desktop */
@@ -153,6 +168,16 @@ body {
 
   .btn--primary {
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    padding: 1rem 3.9rem;
+  }
+
+  .btn--primary {
+    font-size: 1.7rem;
   }
 }
 
