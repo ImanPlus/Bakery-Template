@@ -116,7 +116,7 @@ body {
 
   .hero .hero__content {
     margin-bottom: 18rem;
-    margin-top: 6.4rem;
+    margin-top: 10rem;
   }
 }
 
@@ -135,11 +135,6 @@ body {
     font-size: 1.8rem;
     margin-top: 9.5rem;
     margin-bottom: 5.3rem;
-  }
-
-  .hero .hero__content {
-    margin-bottom: 18rem;
-    margin-top: 10rem;
   }
 }
 
@@ -299,6 +294,11 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  header {
+    position: absolute;
+    width: 100%;
+  }
+
   .nav__toggler {
     display: none;
   }
@@ -321,6 +321,14 @@ header {
 
   .nav__item > a span {
     display: inline-flex;
+  }
+
+  .nav__social {
+    padding-left: 5.5rem;
+  }
+
+  .nav__brand {
+    padding: 1.3rem;
   }
 }
 
