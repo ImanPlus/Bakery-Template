@@ -29,18 +29,45 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- block-Hero -->
-    <section class="hero">
-      <div class="hero__content">
-        <h1>Pastry with love</h1>
-        <div class="tag__line">
-          <p>
-            We’re bringing you fresh ingredients<br />every day in ways you
-            can’t resist.
-          </p>
-        </div>
-        <a class="btn btn--primary" href="#">Our menu</a>
-      </div>
-    </section>
+    <!-- Header - Navbar -->
+    <header>
+      <nav class="nav collapsible">
+        <a class="nav__brand" href="#">Gustoso</a>
+        <svg class="icon icon--white nav__toggler">
+          <use href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a href="#">Welcome<span class="between__nav">~</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Menu<span class="between__nav">~</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="#">reservations<span class="between__nav">~</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="#">News<span class="between__nav">~</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Contact</a>
+          </li>
+          <li class="nav__item nav__social">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/c3fffaa21e.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
