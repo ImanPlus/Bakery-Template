@@ -23,10 +23,11 @@ html {
 :root {
   --color-body: #56534c;
   --color-heading: #ffffff;
+  --font-family-body: Montserrat, Arial, Helvetica, sans-serif;
 }
 
 body {
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-family: var(--font-family-body);
   color: var(--color-body);
 
   /* font-size: 2rem;
@@ -47,6 +48,10 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.art__block {
+  padding-top: 11rem;
 }
 
 .list {
@@ -82,7 +87,7 @@ body {
 }
 
 .hero .tag__line {
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-family: var(--font-family-body);
   color: var(--color-heading);
   font-size: 1rem;
   letter-spacing: 0.2rem;
@@ -173,7 +178,7 @@ body {
 
 .btn--primary {
   border: 1px solid #9e9c93;
-  background: #56534c;
+  background: var(--color-body);
   opacity: 0.7;
   color: var(--color-heading);
   font-size: 1.1rem;
@@ -345,4 +350,106 @@ header {
 .collapsible--expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
+}
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1×2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Art */
+.art {
+  /* gap: 1rem 1rem; */
+  grid-template-areas: "Text Picture";
+}
+.art__content {
+  text-align: center;
+  letter-spacing: 1px;
+  color: var(--color-body);
+  padding: 0 1rem;
+}
+
+.art__content h4 {
+  font-size: 2.4rem;
+}
+
+.art__heading {
+  font-size: 3.2rem;
+  line-height: 0;
+  font-weight: 700;
+  font-family: Alegreya, "Times New Roman", Times, serif;
+  margin-bottom: 6.8rem;
+}
+
+.art__heading p {
+  font-size: 1.6rem;
+  color: #996035;
+}
+
+.art__body {
+  padding: 7rem 1rem 0;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-family: var(--font-family-body);
+}
+
+.art__name-person {
+  margin-bottom: 4.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.art__name-person span {
+  border: 1px solid rgba(215, 213, 202, 1);
+  border-right: 0;
+  border-left: 0;
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding: 0.1rem;
+  font-family: Alegreya, "Times New Roman", Times, serif;
+}
+
+.art__profile_img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px gray;
+  margin: 0 3.6rem;
+}
+
+/* Quotes */
+.quote {
+  font-size: 37px;
+  font-family: scriptina, Arial, Helvetica, sans-serif;
+  color: #a47d5e;
+  font-weight: 400;
+}
+
+.quote__text::before {
+  content: open-quote;
+  padding-right: 48px;
+  font-size: 60px;
+  font-family: "Times New Roman", Times, serif;
+  color: #56534c;
+  opacity: 0.5;
+  position: relative;
+  top: -22px;
+}
+
+.quote__text::after {
+  content: close-quote;
+  padding-left: 40px;
+  font-size: 60px;
+  font-family: "Times New Roman", Times, serif;
+  color: #56534c;
+  opacity: 0.5;
+  position: relative;
+  top: 60px;
 }
