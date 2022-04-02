@@ -225,6 +225,18 @@ a {
   fill: #fff;
 }
 
+.icon--art {
+  width: 200px;
+  /* height: 247px; */
+}
+
+.icon--wavy-edges-circle {
+  filter: drop-shadow(0 0 0 #f3ede9);
+  position: absolute;
+  margin: 76px 78px;
+  opacity: 0.95;
+}
+
 /* Navigation Bar */
 header {
   background: rgba(86, 83, 76, 0.5294117647058824);
@@ -435,6 +447,19 @@ header {
 
 .art__image {
   width: 100%;
+}
+
+.art__img-text {
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 36px;
+  color: #c9b176;
+  font-weight: 400;
+  font-family: Alegreya, "Times New Roman", Times, serif;
+  text-align: center;
+  position: relative;
+  top: -206px;
+  left: 93px;
 }
 
 /* Quotes */
