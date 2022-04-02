@@ -357,6 +357,10 @@ header {
   display: grid;
 }
 
+.grid--2×2 {
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
 @media screen and (min-width: 768px) {
   .grid--1×2 {
     grid-template-columns: repeat(2, 1fr);
@@ -384,7 +388,7 @@ header {
   line-height: 0;
   font-weight: 700;
   font-family: Alegreya, "Times New Roman", Times, serif;
-  margin-bottom: 6.8rem;
+  margin-bottom: 4.8rem;
 }
 
 .art__heading p {
@@ -393,7 +397,7 @@ header {
 }
 
 .art__body {
-  padding: 7rem 1rem 0;
+  padding: 0 1rem;
   font-size: 1.4rem;
   line-height: 2.4rem;
   font-family: var(--font-family-body);
@@ -424,9 +428,18 @@ header {
   margin: 0 3.6rem;
 }
 
+.art__gallery {
+  padding: 2rem 1rem;
+  gap: 1.8rem;
+}
+
+.art__image {
+  width: 100%;
+}
+
 /* Quotes */
 .quote {
-  font-size: 37px;
+  font-size: 3.7rem;
   font-family: scriptina, Arial, Helvetica, sans-serif;
   color: #a47d5e;
   font-weight: 400;
@@ -434,22 +447,22 @@ header {
 
 .quote__text::before {
   content: open-quote;
-  padding-right: 48px;
-  font-size: 60px;
+  padding-right: 4.8rem;
+  font-size: 6rem;
   font-family: "Times New Roman", Times, serif;
   color: #56534c;
   opacity: 0.5;
   position: relative;
-  top: -22px;
+  top: -2.2rem;
 }
 
 .quote__text::after {
   content: close-quote;
-  padding-left: 40px;
-  font-size: 60px;
+  padding-left: 4rem;
+  font-size: 6rem;
   font-family: "Times New Roman", Times, serif;
   color: #56534c;
   opacity: 0.5;
   position: relative;
-  top: 60px;
+  top: 6rem;
 }

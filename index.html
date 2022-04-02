@@ -31,7 +31,7 @@
   <body>
     <!-- Art-block -->
     <section class="container art__block">
-      <article class="grid grid--1×2 art">
+      <article class="grid grid--1×2">
         <div class="art__content">
           <div class="art__heading">
             <h3>Art of cakes</h3>
@@ -61,6 +61,108 @@
           <blockquote class="quote">
             <p class="quote__text">Unique creations for unique occasions.</p>
           </blockquote>
+        </div>
+
+        <div class="art__gallery grid grid--2×2">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                images/img-top-left_resize_w167.webp     167w,
+                images/img-top-left_resize_@2x_w296.webp 296w
+              "
+            />
+            <source
+              type="image/jpg"
+              srcset="
+                images/img-top-left_resize_w167.jpg     167w,
+                images/img-top-left_resize_@2x_w296.jpg 296w
+              "
+            />
+
+            <img
+              class="art__image"
+              src="images/img-top-left_resize_@2x_w296.jpg"
+              alt="Some flour"
+            />
+          </picture>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                images/img-top-right_resize_w167.webp     167w,
+                images/img-top-right_resize_@2x_w296.webp 296w
+              "
+            />
+            <source
+              type="image/jpg"
+              srcset="
+                images/img-top-right_resize_w167.jpg     167w,
+                images/img-top-right_resize_@2x_w296.jpg 296w
+              "
+            />
+
+            <img
+              class="art__image"
+              src="images/img-top-right_resize_@2x_w296.jpg"
+              alt="Some flour"
+            />
+          </picture>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                images/img-top-right_resize_w167.webp     167w,
+                images/img-top-right_resize_@2x_w296.webp 296w
+              "
+            />
+            <source
+              type="image/jpg"
+              srcset="
+                images/img-top-right_resize_w167.jpg     167w,
+                images/img-top-right_resize_@2x_w296.jpg 296w
+              "
+            />
+
+            <img
+              class="art__image"
+              src="images/img-top-right_resize_@2x_w296.jpg"
+              alt="Some flour"
+            />
+          </picture>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                images/img-top-right_resize_w167.webp     167w,
+                images/img-top-right_resize_@2x_w296.webp 296w
+              "
+            />
+            <source
+              type="image/jpg"
+              srcset="
+                images/img-top-right_resize_w167.jpg     167w,
+                images/img-top-right_resize_@2x_w296.jpg 296w
+              "
+            />
+
+            <img
+              class="art__image"
+              src="images/img-top-right_resize_@2x_w296.jpg"
+              alt="Some flour"
+            />
+          </picture>
+          <svg class="icon icon--white nav__toggler">
+            <use href="images/sprite.svg#Vektor-Smartobj"></use>
+          </svg>
+
+          <!-- <img class="art__img" src="images/img-top-left.jpeg" alt="" />
+          <img class="art__img" src="images/img-top-right.jpeg" alt="" />
+          <img class="art__img" src="images/img-bottom-left.jpeg" alt="" />
+          <img class="art__img" src="images/img-bottom-right.jpeg" alt="" /> -->
         </div>
       </article>
     </section>
