@@ -239,21 +239,21 @@ a {
 }
 
 @media screen and (min-width: 415px) {
-  /* .icon--wavy-edges-circle {
+  .icon--wavy-edges-circle {
     transform: scale(1.6) translate(-34%, -46%);
-  } */
+  }
 }
 
 @media screen and (min-width: 768px) {
-  /* .icon--wavy-edges-circle {
+  .icon--wavy-edges-circle {
     transform: scale(1.8) translate(-27%, -34%);
-  } */
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  /* .icon--wavy-edges-circle {
+  .icon--wavy-edges-circle {
     transform: scale(1.2) translate(-41%, -47%);
-  } */
+  }
 }
 
 /* Navigation Bar */

@@ -26,19 +26,38 @@
     />
 
     <!-- link | Styles -->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <style>
+      .figure {
+        position: relative;
+        width: 600px;
+        margin: 0 auto;
+        margin-bottom: 1em;
+      }
+      .figure svg {
+        display: block;
+        width: 100%;
+        height: 550px;
+      }
+      .figure--px {
+        top: 20px;
+        left: -30px;
+        padding: 1em;
+        box-shadow: -5px 5px 0 0 transparentize(#000, 0.85);
+        font-size: 1.75em;
+      }
+    </style>
   </head>
   <body>
-    <svg
-      style="
-        width: 106px;
-        height: 106px;
-        position: absolute;
-        bottom: -16px;
-        fill: #c2aea4;
-      "
-    >
-      <use xlink:href="#Vektor-Smartobj"></use>
-    </svg>
+    <figure class="figure figure--px">
+      <svg>
+        <use href="images/sprite.svg#wavyEdgesCircle"></use>
+      </svg>
+    </figure>
   </body>
 </html>
+
+<!-- <figure class="figure figure--px">
+  <img src="" alt="Sunrise">
+  <figcaption>The feeling you.</figcaption>
+</figure> -->
