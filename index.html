@@ -30,7 +30,7 @@
   </head>
   <body>
     <!-- Art-block -->
-    <section class="container art__block">
+    <div class="container art__block">
       <article class="grid grid--1×2">
         <div class="art__content">
           <div class="art__heading">
@@ -63,7 +63,7 @@
           </blockquote>
         </div>
 
-        <div class="art__gallery grid grid--2×2">
+        <div class="art__gallery grid art__grid--3×3">
           <picture>
             <source
               type="image/webp"
@@ -71,6 +71,7 @@
                 images/img-top-left_resize_w167.webp     167w,
                 images/img-top-left_resize_@2x_w296.webp 296w
               "
+              sizes="100rem"
             />
             <source
               type="image/jpg"
@@ -78,14 +79,17 @@
                 images/img-top-left_resize_w167.jpg     167w,
                 images/img-top-left_resize_@2x_w296.jpg 296w
               "
+              sizes="100rem"
             />
 
             <img
-              class="art__image"
+              class="art__image art__grid-cell"
               src="images/img-top-left_resize_@2x_w296.jpg"
               alt="Some flour"
             />
           </picture>
+
+          <div class="art__grid-cell"></div>
 
           <picture>
             <source
@@ -94,6 +98,7 @@
                 images/img-top-right_resize_w167.webp     167w,
                 images/img-top-right_resize_@2x_w296.webp 296w
               "
+              sizes="100rem"
             />
             <source
               type="image/jpg"
@@ -101,14 +106,32 @@
                 images/img-top-right_resize_w167.jpg     167w,
                 images/img-top-right_resize_@2x_w296.jpg 296w
               "
+              sizes="100rem"
             />
 
             <img
-              class="art__image"
+              class="art__image art__grid-cell"
               src="images/img-top-right_resize_@2x_w296.jpg"
               alt="Some flour, bread, wheat and an egg"
             />
           </picture>
+
+          <div class="art__grid-cell"></div>
+
+          <div class="art__grid-cell">
+            <picture>
+              <source type="image/webp" srcset="images/Circle-wave.webp" />
+              <source type="image/jpeg" srcset="images/Circle-wave.jpeg" />
+              <img
+                class="icon--art"
+                src="images/Circle-wave.jpeg"
+                alt="Wavy edges circle"
+              />
+            </picture>
+            <p class="art__inside-text">TASTES SO GOOD!</p>
+          </div>
+
+          <div class="art__grid-cell"></div>
 
           <picture>
             <source
@@ -117,6 +140,7 @@
                 images/img-bottom-left_resize_w167.webp     167w,
                 images/img-bottom-left_resize_@2x_w296.webp 296w
               "
+              sizes="100rem"
             />
             <source
               type="image/jpg"
@@ -124,14 +148,17 @@
                 images/img-bottom-left_resize_w167.jpg     167w,
                 images/img-bottom-left_resize_@2x_w296.jpg 296w
               "
+              sizes="100rem"
             />
 
             <img
-              class="art__image"
+              class="art__image art__grid-cell"
               src="images/img-bottom-left_resize_@2x_w296.jpg"
               alt="a slice cake"
             />
           </picture>
+
+          <div class="art__grid-cell"></div>
 
           <picture>
             <source
@@ -140,6 +167,7 @@
                 images/img-bottom-right_resize_w167.webp     167w,
                 images/img-bottom-right_resize_@2x_w296.webp 296w
               "
+              sizes="100rem"
             />
             <source
               type="image/jpg"
@@ -147,24 +175,18 @@
                 images/img-bottom-right_resize_w167.jpg     167w,
                 images/img-bottom-right_resize_@2x_w296.jpg 296w
               "
+              sizes="100rem"
             />
 
             <img
-              class="art__image"
+              class="art__image art__grid-cell"
               src="images/img-bottom-right_resize_@2x_w296.jpg"
               alt="A few slices of cake and some strawberries"
             />
           </picture>
-
-          <div class="circle">
-            <svg class="icon--art icon--wavy-edges-circle">
-              <use href="images/sprite.svg#wavyEdgesCircle"></use>
-              <span class="art__img-text">TASTES SO GOOD!</span>
-            </svg>
-          </div>
         </div>
       </article>
-    </section>
+    </div>
 
     <!-- Scripts -->
     <script src="js/main.js"></script>

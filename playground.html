@@ -28,32 +28,37 @@
     <!-- link | Styles -->
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
     <style>
-      .figure {
+      html {
+        font-size: 62.5%;
+      }
+      .container {
+        border: 1px solid darkblue;
+        width: 15vw;
+        height: 20vh;
         position: relative;
-        width: 600px;
-        margin: 0 auto;
-        margin-bottom: 1em;
+        padding: 1vh;
       }
-      .figure svg {
-        display: block;
-        width: 100%;
-        height: 550px;
+      .container p {
+        font-size: 3vh;
+        color: rgb(71, 49, 49);
+        text-align: center;
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
       }
-      .figure--px {
-        top: 20px;
-        left: -30px;
-        padding: 1em;
-        box-shadow: -5px 5px 0 0 transparentize(#000, 0.85);
-        font-size: 1.75em;
+      .container img {
+        width: 15vw;
+        height: 20vh;
       }
     </style>
   </head>
   <body>
-    <figure class="figure figure--px">
-      <svg>
-        <use href="images/sprite.svg#wavyEdgesCircle"></use>
-      </svg>
-    </figure>
+    <div class="container">
+      <img src="images/Circle-wave.jpeg" alt="" />
+      <p>TASTES SO GOOD!</p>
+    </div>
   </body>
 </html>
 
