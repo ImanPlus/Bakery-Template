@@ -29,6 +29,44 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="favorite-block">
+      <div class="container-favorite">
+        <!-- Picture part -->
+        <picture>
+          <source type="image/webp" srcset="images/Pancake.webp" />
+          <source type="image/webp" srcset="images/Pancake.jpg" />
+          <img
+            class="favorite__img"
+            src="images/Pancake.jpg"
+            alt="A plate of pancakes"
+          />
+        </picture>
+
+        <!-- Content part -->
+        <section class="favorite__content">
+          <div class="post__content">
+            <h1>Tasty pancakes</h1>
+            <h3>season favorite</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+              repellat ratione impedit autem, nostrum dolorum at. Repellat
+              doloribus totam veniam, blanditiis beatae animi!
+            </p>
+          </div>
+
+          <!-- Time box -->
+          <div class="time__box">
+            <img class="bg__box" src="images/time_box.jpg" alt="" />
+            <div class="box__content">
+              <p class="box--title">ready in</p>
+              <p class="box--time">40</p>
+              <p class="box--unit">mins</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
     <!-- Scripts -->
     <script src="js/main.js"></script>
 
