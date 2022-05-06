@@ -36,6 +36,9 @@ body {
   font-weight: 700;
   font-family: Alegreya, "Times New Roman", Times, serif;
   color: #454545;
+  position: absolute;
+  z-index: 200;
+  padding-right: 1rem;
 }
 
 .post__content h1 {
@@ -554,11 +557,6 @@ header {
 }
 
 .container-favorite {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  flex-direction: row; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 2rem;
@@ -572,9 +570,17 @@ header {
   width: 100%;
 }
 
+.favorite__img-back {
+  width: 50%;
+  position: absolute;
+  top: 76%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 150;
+  opacity: 0.2;
+}
+
 .favorite__content {
-  /* display: flex;
-  flex-direction: column; */
   padding: 1rem;
   background: white;
   position: relative;
@@ -620,7 +626,6 @@ header {
 }
 
 .bg__box {
-  background: url(../images/time_box.jpg) no-repeat;
   background-size: cover;
   opacity: 0.2;
   width: 100%;
