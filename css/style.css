@@ -38,43 +38,68 @@ body {
   color: #454545;
   position: absolute;
   z-index: 200;
-  padding-right: 1rem;
+  padding: 1.267vw;
 }
 
 .post__content h1 {
-  font-size: 1.5rem;
+  font-size: 4vw;
   line-height: 1px;
 }
 
 .post__content h3 {
-  font-size: 1rem;
+  font-size: 1.6vw;
   color: #b69b86;
 }
 
 .post__content p {
   font-family: var(--font-family-body);
-  font-size: 0.6rem;
-  line-height: 10px;
+  font-size: 1.6vw;
+  line-height: 2.667vw;
+  font-weight: 500;
+  margin-top: 6.933vw;
 }
 
 @media screen and (min-width: 768px) {
   .post__content {
-    padding: 2.7rem;
+    padding: 3.516vw;
   }
 
   .post__content h1 {
-    font-size: 2.9rem;
+    font-size: 3.776vw;
   }
 
   .post__content h3 {
-    font-size: 1.2rem;
+    font-size: 1.563vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .post__content {
+    padding: 2.93vw;
+  }
+
+  .post__content h1 {
+    font-size: 3.492vw;
+  }
+
+  .post__content h3 {
+    font-size: 1.465vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .post__content h1 {
+    font-size: 4.9rem;
+  }
+
+  .post__content h3 {
+    font-size: 2.1rem;
   }
 
   .post__content p {
-    font-size: 1rem;
-    line-height: 18px;
-    margin-top: 6rem;
-    font-weight: 600;
+    font-size: 2.1rem;
+    line-height: 3.3rem;
+    margin-top: 11.2rem;
   }
 }
 
@@ -676,10 +701,23 @@ header {
   color: #979285;
 }
 
+@media screen and (max-width: 767px) {
+  .time__box {
+    left: 43vw;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .time__box {
     transform: scale(1.5);
     top: -2%;
     left: 90%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .time__box {
+    transform: scale(1.9);
+    top: 0%;
   }
 }
