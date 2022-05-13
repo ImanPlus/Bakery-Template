@@ -635,19 +635,22 @@ header {
   position: relative;
 }
 
+.container_star-img {
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+
 .favorite-star {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1.7vw;
   position: absolute;
-  left: 8.8vw;
-  top: 35.533vw;
-  transform: translate(-50%, -50%);
+  margin-left: 3%;
 }
 
 .favorite-star i {
   color: #ffffff;
-  margin-bottom: 1.6vw;
-  font-size: 1.6vw;
+  font-size: 1.2vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -660,18 +663,6 @@ header {
   .favorite-block {
     background: url(../images/Kitchen_work_table_w1082.jpg) no-repeat;
     background-size: cover;
-  }
-
-  .favorite-star {
-    left: 9.8vw;
-    top: 32.533vw;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .favorite-star {
-    left: 11.8vw;
-    top: 30.533vw;
   }
 }
 
