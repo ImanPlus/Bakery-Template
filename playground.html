@@ -28,30 +28,45 @@
     <!-- link | Styles -->
     <link rel="stylesheet" href="css/style.css" />
     <style>
-      .time__box {
-        width: 100px;
-        height: 100px;
-        background: url(../images/time_box.jpg) no-repeat;
-        background-size: cover;
+      .grid__1-2 {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
       }
 
-      .time__box title {
-        font-size: 18px;
-        letter-spacing: 2px;
-        line-height: 30px;
-        color: #a47d5e;
-        font-weight: 700;
-        font-family: Alegreya;
-        text-align: center;
+      .star {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1.7vw;
+        position: absolute;
+        margin-left: 3%;
+      }
+
+      .star i {
+        color: #ffffff;
+        font-size: 1.2vw;
       }
     </style>
   </head>
   <body>
-    <!-- Time box -->
-    <div class="time__box">
-      <p class="title">ready in</p>
-      <p class="time">40</p>
-      <p class="unit">mins</p>
+    <div class="grid grid__1-2" style="width: 50vw; background: orange">
+      <img
+        class="favorite__img"
+        src="images/Pancake.jpg"
+        alt="A plate of pancakes"
+      />
+      <!-- Stars on picture -->
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
     </div>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/c3fffaa21e.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

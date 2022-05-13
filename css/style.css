@@ -288,6 +288,10 @@ a {
   z-index: 400;
 }
 
+.icon--star {
+  fill: transparent;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
 /* Navigation Bar */
 header {
   background: rgba(86, 83, 76, 0.5294117647058824);
@@ -631,6 +635,21 @@ header {
   position: relative;
 }
 
+.favorite-star {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 8.8vw;
+  top: 35.533vw;
+  transform: translate(-50%, -50%);
+}
+
+.favorite-star i {
+  color: #ffffff;
+  margin-bottom: 1.6vw;
+  font-size: 1.6vw;
+}
+
 @media screen and (min-width: 768px) {
   .container-favorite {
     padding: 4rem;
@@ -641,6 +660,18 @@ header {
   .favorite-block {
     background: url(../images/Kitchen_work_table_w1082.jpg) no-repeat;
     background-size: cover;
+  }
+
+  .favorite-star {
+    left: 9.8vw;
+    top: 32.533vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .favorite-star {
+    left: 11.8vw;
+    top: 30.533vw;
   }
 }
 
