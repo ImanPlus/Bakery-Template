@@ -743,3 +743,65 @@ header {
     top: 0%;
   }
 }
+
+/* Prices-list block */
+.prices-list {
+  background: url(../images/prices-list_w725.jpg) no-repeat;
+  background-size: cover;
+}
+
+.price-list__content {
+  text-align: center;
+  padding-bottom: 3.6rem;
+  color: var(--color-heading);
+  font-family: Alegreya, "Times New Roman", Times, serif;
+}
+
+.price-list__content h1,
+h4 {
+  padding-top: 3.6rem;
+}
+
+.price-list__content h1,
+h4,
+p {
+  margin: 0;
+}
+.price-list__content h1 {
+  letter-spacing: 3px;
+  font-size: 4.209rem;
+}
+
+.price-list__content h4 {
+  font-size: 1.777rem;
+}
+.price-list__content .h1-subtitle--primary {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #c8a593;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.price-list__content .h4-subtitle--secondary {
+  color: #c2beba;
+  font-size: 1.5rem;
+}
+
+.h4-subtitle__price {
+  font-size: 2.369rem;
+  color: #dfc691;
+  letter-spacing: 0.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .prices-list {
+    background: url(../images/prices-list_w985.jpg) no-repeat;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .prices-list {
+    background: url(../images/prices-list_w1100.jpg) no-repeat;
+  }
+}
