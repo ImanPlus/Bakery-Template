@@ -928,3 +928,34 @@ p {
     background: url(../images/prices-list_w1100.jpg) no-repeat;
   }
 }
+
+/* Sandwich-block */
+.list-sandwich {
+}
+
+.side-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  /* align-items: center; */
+  padding: 50px 0;
+  text-align: center;
+  max-width: 570px;
+}
+
+.box-sandwich {
+  padding: 10px 50px;
+}
+
+.box-sandwich img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-sandwich.container.grid.grid--1×2 {
+    grid-template-columns: repeat(2, 1fr);
+    /* align-items: center; */
+  }
+}
