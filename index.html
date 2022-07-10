@@ -32,7 +32,7 @@
     <!-- Sandwich-block -->
     <div class="list-sandwich container grid grid--1×2">
       <!-- Side list -->
-      <section class="side-list" style="background: greenyellow">
+      <section style="background-color: green" class="side-list">
         <div class="box-sandwich">
           <img src="images/Wheat.jpg" alt="Some wheat" />
           <h2>Class aptent</h2>
@@ -51,12 +51,22 @@
       </section>
 
       <!-- Sandwich content -->
-      <section style="background-color: red">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam excepturi
-        quae qui porro? Esse et veniam explicabo totam tempore delectus beatae
-        dicta autem consequatur odio repellendus hic repudiandae, rem harum,
-        debitis iste tempora. Vel quidem qui tenetur iusto itaque sint eius
-        temporibus iure a animi suscipit, debitis, id praesentium ducimus!
+      <section class="list-sandwich__content" style="background: red">
+        <h1>The Jibarito sandwich</h1>
+        <h3>the best sandwich you’ve ever tasted!</h3>
+
+        <!-- Info food -->
+        <div class="info-food">
+          <picture>
+            <source type="image/webp" srcset="images/sandwich.webp" />
+            <source type="image/jpg" srcset="images/sandwich.jpg" />
+            <img
+              class="banner"
+              src="images/sandwich.jpg"
+              alt="Sausage sandwich"
+            />
+          </picture>
+        </div>
       </section>
     </div>
 
