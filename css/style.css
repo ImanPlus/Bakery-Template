@@ -734,6 +734,10 @@ header {
   margin-bottom: 19px;
 }
 
+.box--primary {
+  color: var(--color-body);
+}
+
 .box--unit {
   margin: 0;
   color: #979285;
@@ -961,6 +965,7 @@ p {
   font-family: Alegreya, "Times New Roman", Times, serif;
   color: #56534c;
   line-height: 6px;
+  padding-top: 25px;
 }
 
 .list-sandwich__content h1 {
@@ -973,6 +978,14 @@ p {
   font-size: 1.2rem;
 }
 
+.info-food {
+  position: relative;
+}
+
+.info-food .time__box {
+  /* transform: translate(168%, 0); */
+}
+
 .info-food .banner {
   max-width: 295px;
 }
@@ -981,6 +994,41 @@ p {
   font-size: 4vw;
   line-height: 1px;
 } */
+
+.content-top {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.img-top {
+  /* width: 50%;
+  top: 76%;
+  left: 70%;
+  
+  ;
+    */
+  /*  */
+  /* z-index: 160;
+  position: absolute;
+   */
+  /* left: 0; */
+  /* transform: translate(323%, -50%); */
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 17rem;
+  opacity: 0.3;
+  transform: translate(-11%, 59%);
+}
+
+.side-time {
+  position: relative;
+  transform: translate(38%, -76%);
+}
+
+.side-time .time__box {
+  position: inherit;
+}
 
 @media screen and (min-width: 768px) {
   .list-sandwich.container.grid.grid--1×2 {
@@ -991,7 +1039,7 @@ p {
 
   .list-sandwich__content {
     text-align: left;
-    padding-top: 25px;
+    /* padding-top: 25px; */
     height: 96vh;
   }
 

@@ -32,7 +32,7 @@
     <!-- Sandwich-block -->
     <div class="list-sandwich container grid grid--1×2">
       <!-- Side list -->
-      <section style="background-color: green" class="side-list">
+      <section class="side-list">
         <div class="box-sandwich">
           <img src="images/Wheat.jpg" alt="Some wheat" />
           <h2>Class aptent</h2>
@@ -51,9 +51,12 @@
       </section>
 
       <!-- Sandwich content -->
-      <section class="list-sandwich__content" style="background: red">
-        <h1>The Jibarito sandwich</h1>
-        <h3>the best sandwich you’ve ever tasted!</h3>
+      <section class="list-sandwich__content">
+        <div class="content-top">
+          <img src="images/Windmills.png" alt="" class="img-top" />
+          <h1>The Jibarito sandwich</h1>
+          <h3>the best sandwich you’ve ever tasted!</h3>
+        </div>
 
         <!-- Info food -->
         <div class="info-food">
@@ -66,6 +69,34 @@
               alt="Sausage sandwich"
             />
           </picture>
+
+          <!-- Time box -->
+          <div class="side-time">
+            <div class="time__box">
+              <div class="box__content">
+                <p class="box--title">prep</p>
+                <p class="box--time box--primary">15</p>
+                <p class="box--unit">mins</p>
+              </div>
+            </div>
+
+            <div class="time__box">
+              <div class="box__content">
+                <p class="box--title">cook</p>
+                <p class="box--time box--primary">35</p>
+                <p class="box--unit">mins</p>
+              </div>
+            </div>
+
+            <div class="time__box">
+              <img class="bg__box" src="images/time_box.jpg" alt="Farm" />
+              <div class="box__content">
+                <p class="box--title">ready in</p>
+                <p class="box--time">40</p>
+                <p class="box--unit">mins</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
