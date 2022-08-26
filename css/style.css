@@ -25,6 +25,11 @@ html {
   /* Montserrat instead of proximaNova */
   --font-family-body: Montserrat, Arial, Helvetica, sans-serif;
   --font-Alegreya: Alegreya, "Times New Roman", Times, serif;
+  /* Sandwich-block */
+  --food-height: 354px;
+  --outside-value: 1rem;
+  --width-childs: 30%;
+  --outside-value: 1rem;
 }
 
 body {
@@ -258,10 +263,18 @@ body {
   color: #a47d5e;
 }
 
-.btn--secondary:hover {
+.btn--secondary,
+.btn--ascend:hover {
   color: #f3f1e9;
   background-color: #a47d5e;
   opacity: 1;
+}
+
+.btn--ascend {
+  color: #a47d5e;
+  border: 1px dashed #a47d5e;
+  background: white;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -701,6 +714,10 @@ header {
   box-shadow: 0 0 20px -2px #d3cdcd;
 }
 
+.time__box--secondary {
+  opacity: 0.8;
+}
+
 .box__content {
   letter-spacing: 1px;
   line-height: 1px;
@@ -942,14 +959,13 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  /* align-items: center; */
-  padding: 50px 0;
+  padding: 5rem 0rem;
   text-align: center;
   max-width: 570px;
 }
 
 .box-sandwich {
-  padding: 10px 50px;
+  padding: 1rem 5rem;
 }
 
 .box-sandwich img {
@@ -965,7 +981,7 @@ p {
   font-family: Alegreya, "Times New Roman", Times, serif;
   color: #56534c;
   line-height: 6px;
-  padding-top: 25px;
+  padding-top: 2.5rem;
 }
 
 .list-sandwich__content h1 {
@@ -978,41 +994,12 @@ p {
   font-size: 1.2rem;
 }
 
-.info-food {
-  position: relative;
-}
-
-.info-food .time__box {
-  /* transform: translate(168%, 0); */
-}
-
-.info-food .banner {
-  max-width: 295px;
-}
-
-/* .list-sandwich__content h3 {
-  font-size: 4vw;
-  line-height: 1px;
-} */
-
 .content-top {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .img-top {
-  /* width: 50%;
-  top: 76%;
-  left: 70%;
-  
-  ;
-    */
-  /*  */
-  /* z-index: 160;
-  position: absolute;
-   */
-  /* left: 0; */
-  /* transform: translate(323%, -50%); */
   width: 50px;
   height: 50px;
   position: relative;
@@ -1021,31 +1008,109 @@ p {
   transform: translate(-11%, 59%);
 }
 
-.side-time {
-  position: relative;
-  transform: translate(38%, -76%);
+.food-body-full {
+  height: 100vh;
+  margin: 0;
 }
 
-.side-time .time__box {
-  position: inherit;
+.centered {
+  display: grid;
+  place-items: start center;
+}
+
+.container-food {
+  height: var(--food-height);
+  width: 90%;
+}
+
+.pos--relative {
+  position: relative;
+}
+
+.pos--absolute {
+  position: absolute;
+}
+
+.food__bg-img {
+  background: url(../images/sandwich.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.right-childs {
+  height: calc(100% + var(--outside-value));
+  width: var(--width-childs);
+  right: 0;
+}
+
+.food-time {
+  box-shadow: 0 0 20px -2px #d3cdcd;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  background: white;
+  justify-content: center;
+}
+
+.pri-time {
+  opacity: 0.8;
+}
+
+.img-time {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+  left: 0;
+}
+
+.pri-time .box--time {
+  color: var(--color-body);
+}
+
+.food-time .box--title {
+  font-size: 1.3rem;
+}
+
+.food-time .box--time {
+  font-size: 6rem;
+}
+
+.food-time .box--unit {
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+
+.outside-position {
+  --negative-outside-position: calc(var(--outside-value) * -1);
+  position: absolute;
+  bottom: var(--negative-outside-position);
+  left: var(--negative-outside-position);
 }
 
 @media screen and (min-width: 768px) {
   .list-sandwich.container.grid.grid--1×2 {
-    /* grid-template-columns: repeat(2, 1fr); */
     grid-template-columns: 262px auto;
     align-items: start;
   }
 
   .list-sandwich__content {
     text-align: left;
-    /* padding-top: 25px; */
     height: 96vh;
   }
 
-  .info-food .banner {
-    max-width: 430px;
-    height: 465px;
-    padding-left: 20px;
+  :root {
+    --food-height: 462px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .food-time .box--title {
+    font-size: 1.5rem;
+  }
+
+  .food-time .box--unit {
+    font-size: 1.7rem;
+    padding-top: 15px;
   }
 }

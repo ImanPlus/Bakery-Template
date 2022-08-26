@@ -27,6 +27,13 @@
 
     <!-- link | Styles -->
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .ready {
+        display: grid;
+        place-items: center;
+        position: relative;
+      }
+    </style>
   </head>
   <body>
     <!-- Sandwich-block -->
@@ -59,43 +66,33 @@
         </div>
 
         <!-- Info food -->
-        <div class="info-food">
-          <picture>
-            <source type="image/webp" srcset="images/sandwich.webp" />
-            <source type="image/jpg" srcset="images/sandwich.jpg" />
-            <img
-              class="banner"
-              src="images/sandwich.jpg"
-              alt="Sausage sandwich"
-            />
-          </picture>
-
-          <!-- Time box -->
-          <div class="side-time">
-            <div class="time__box">
-              <div class="box__content">
+        <div class="food-body-full centered">
+          <div class="container-food pos--relative food__bg-img">
+            <div class="right-childs pos--absolute grid">
+              <div class="food-time pri-time">
                 <p class="box--title">prep</p>
-                <p class="box--time box--primary">15</p>
+                <p class="box--time">15</p>
                 <p class="box--unit">mins</p>
               </div>
-            </div>
 
-            <div class="time__box">
-              <div class="box__content">
+              <div class="food-time pri-time">
                 <p class="box--title">cook</p>
-                <p class="box--time box--primary">35</p>
+                <p class="box--time">35</p>
                 <p class="box--unit">mins</p>
               </div>
-            </div>
 
-            <div class="time__box">
-              <img class="bg__box" src="images/time_box.jpg" alt="Farm" />
-              <div class="box__content">
+              <div class="food-time pos--relative">
+                <img
+                  class="img-time pos--absolute"
+                  src="images/time_box.jpg"
+                  alt="Farm"
+                />
                 <p class="box--title">ready in</p>
                 <p class="box--time">40</p>
                 <p class="box--unit">mins</p>
               </div>
             </div>
+            <a class="btn btn--ascend outside-position" href="#">FULL RECIPE</a>
           </div>
         </div>
       </section>
