@@ -941,12 +941,14 @@ p {
 @media screen and (min-width: 1024px) {
   .prices-list {
     background: url(../images/prices-list_w985.jpg) no-repeat;
+    background-size: cover;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .prices-list {
     background: url(../images/prices-list_w1100.jpg) no-repeat;
+    background-size: cover;
   }
 }
 
@@ -982,6 +984,7 @@ p {
   color: #56534c;
   line-height: 6px;
   padding-top: 2.5rem;
+  height: 54rem;
 }
 
 .list-sandwich__content h1 {
@@ -1096,7 +1099,7 @@ p {
 
   .list-sandwich__content {
     text-align: left;
-    height: 96vh;
+    height: 20rem;
   }
 
   :root {
